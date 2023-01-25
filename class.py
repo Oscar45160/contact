@@ -8,8 +8,7 @@ class Contact:
         self.phone = phone
         self.creation_time = datetime.datetime.now()
         self.updated_phone = None
-        
-    def update_phone(self, new_phone):
-        self.updated_phone = (self.phone, datetime.datetime.now())
-        self.phone = new_phone
 
+    def update_phone(self, new_phone):
+        self.updated_phone = datetime.datetime.now()
+        self.phone = new_phone
