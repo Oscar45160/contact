@@ -21,6 +21,6 @@ class Contact:
 
 
 Oscar = Contact("Oscar", "Pimpaud", "0647246556")
-Oscar.affiche_contact()
+Oscar.show_contact()
 Oscar.update_phone("377288992")
-Oscar.affiche_contact()
+Oscar.show_contact()
