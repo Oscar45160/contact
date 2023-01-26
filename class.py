@@ -13,7 +13,7 @@ class Contact:
         self.updated_phone = datetime.today().date()
         self.phone = new_phone
 
-    def affiche_contact(self):
+    def show_contact(self):
         print(self.first_name)
         print(self.last_name)
         print(self.phone)
