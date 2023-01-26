@@ -18,10 +18,10 @@ def create_contact():
     # convert the dictionary to a DataFrame
     df_contact = pd.DataFrame(dict_contact, index=[0])
     # if the file doesn't exist, create it and add the header
-    if not os.path.isfile("contact.csv"):
-        df_contact.to_csv("contact.csv", header=True, index=False)
+    if not os.path.isfile("data/contact.csv"):
+        df_contact.to_csv("data/contact.csv", header=True, index=False)
     else:  # else it exists so append without writing the header
-        df_contact.to_csv("contact.csv", mode='a', header=False, index=False)
+        df_contact.to_csv("data/contact.csv", mode='a', header=False, index=False)
     return dict_contact
 
 
